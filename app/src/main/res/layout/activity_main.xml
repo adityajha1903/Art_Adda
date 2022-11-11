@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000">
+
+    <FrameLayout
+        android:id="@+id/fl_drawing"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/sVEditingTools">
+        
+        <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/image_in_the_background"
+            android:scaleType="fitCenter">
+        </ImageView>
+
+        <com.example.adi.artadda.DrawingView
+            android:id="@+id/drawingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.example.adi.artadda.DrawingView>
+
+    </FrameLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/sVEditingTools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="5dp">
+
+                <ImageButton
+                    android:id="@+id/btnUndo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_selector_bg"
+                    android:minHeight="50dp"
+                    android:minWidth="50dp"
+                    android:contentDescription="@string/undo_what_has_been_done"
+                    android:src="@drawable/ic_undo_btn_res"
+                    android:scaleType="fitXY"
+                    android:layout_margin="1dp"
+                    android:padding="2dp">
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/undo"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:gravity="center">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="5dp">
+
+                <ImageButton
+                    android:id="@+id/btnRedo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_selector_bg"
+                    android:minHeight="50dp"
+                    android:minWidth="50dp"
+                    android:contentDescription="@string/redo_what_has_been_undone"
+                    android:src="@drawable/ic_redo_btn_res"
+                    android:scaleType="fitXY"
+                    android:layout_margin="1dp"
+                    android:padding="2dp">
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/redo"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:gravity="center">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="5dp">
+
+                <ImageButton
+                    android:id="@+id/btnChooseBrush"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_selector_bg"
+                    android:minHeight="50dp"
+                    android:minWidth="50dp"
+                    android:contentDescription="@string/choose_brush_thickness"
+                    android:src="@drawable/ic_brush_thickness_selector_btn_img"
+                    android:scaleType="fitXY"
+                    android:layout_margin="1dp"
+                    android:padding="2dp">
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/brush"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:gravity="center">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnChooseColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_selector_bg"
+                    android:contentDescription="@string/choose_color"
+                    android:minWidth="50dp"
+                    android:minHeight="50dp"
+                    android:src="@drawable/ic_color_selector_btn_img"
+                    android:scaleType="fitXY"
+                    android:layout_margin="1dp"
+                    android:padding="2dp">
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/color"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:gravity="center">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnChooseBackgroundImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_selector_bg"
+                    android:contentDescription="@string/choose_background_image"
+                    android:minWidth="50dp"
+                    android:minHeight="50dp"
+                    android:src="@drawable/ic_image_click_res"
+                    android:scaleType="fitXY"
+                    android:layout_margin="1dp"
+                    android:padding="4dp">
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/image"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:gravity="center">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnShareImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_selector_bg"
+                    android:contentDescription="@string/share_the_image_you_created"
+                    android:minWidth="50dp"
+                    android:minHeight="50dp"
+                    android:src="@drawable/ic_share_res"
+                    android:scaleType="fitXY"
+                    android:layout_margin="1dp"
+                    android:padding="4dp">
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/share"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:gravity="center">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnSaveImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_selector_bg"
+                    android:contentDescription="@string/save_your_drawing"
+                    android:minWidth="50dp"
+                    android:minHeight="50dp"
+                    android:src="@drawable/ic_save_res"
+                    android:scaleType="fitXY"
+                    android:layout_margin="1dp"
+                    android:padding="4dp">
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:gravity="center">
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

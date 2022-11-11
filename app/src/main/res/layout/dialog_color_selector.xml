@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:contentDescription="@string/choose_color"
+    android:padding="16dp"
+    android:background="#DFDFDF">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="4dp">
+
+            <LinearLayout
+                android:id="@+id/chooseBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:tag="@color/black"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/choose_black_color"
+                    android:src="@drawable/ic_black_colour_picker_res">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chooseBrown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:tag="@color/brown"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/choose_brown_color"
+                    android:src="@drawable/ic_brown_colour_picker_res">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/brown"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@color/brown"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chooseRed"
+                android:tag="@color/red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/choose_red_color"
+                    android:src="@drawable/ic_red_colour_picker_res">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/red"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@color/red"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chooseOrange"
+                android:tag="@color/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/choose_orange_color"
+                    android:src="@drawable/ic_orange_colour_picker_res">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/orange"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@color/orange"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chooseYellow"
+                android:tag="@color/yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/choose_yellow_color"
+                    android:src="@drawable/ic_yellow_colour_picker_res">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/yellow"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@color/yellow"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chooseLightGreen"
+                android:tag="@color/light_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/choose_green_color"
+                    android:src="@drawable/ic_light_green_colour_picker_res">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/light_green"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@color/light_green"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chooseDarkGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:tag="@color/dark_green">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/choose_dark_green_color"
+                    android:src="@drawable/ic_dark_green_colour_picker_res">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/dark_green"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@color/dark_green"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chooseSkyBlue"
+                android:tag="@color/sky_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/choose_sky_blue_color"
+                    android:src="@drawable/ic_sky_blue_colour_picker_res">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/sky_blue"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@color/sky_blue"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chooseBlue"
+                android:tag="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/choose_blue_color"
+                    android:src="@drawable/ic_blue_colour_picker_res">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/blue"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chooseDarkBlue"
+                android:tag="@color/dark_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/choose_dark_blue_color"
+                    android:src="@drawable/ic_dark_blue_colour_picker_res">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/dark_blue"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@color/dark_blue"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/choosePurple"
+                android:tag="@color/purple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/choose_purple_color"
+                    android:src="@drawable/ic_purple_colour_picker_res">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/purple"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@color/purple"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chooseDarkPink"
+                android:tag="@color/dark_pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/choose_dark_pink_color"
+                    android:src="@drawable/ic_dark_pink_colour_picker_res">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/dark_pink"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@color/dark_pink"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/choosePink"
+                android:tag="@color/pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/choose_pink_color"
+                    android:src="@drawable/ic_pink_colour_picker_res">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/pink"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@color/pink"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chooseGrey"
+                android:tag="@color/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/choose_grey_color"
+                    android:src="@drawable/ic_grey_colour_picker_res">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/grey"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@color/grey"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chooseWhite"
+                android:tag="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:contentDescription="@string/choose_white_color"
+                    android:src="@drawable/ic_white_colour_picker_res">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:text="@string/white"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:text="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/black">
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</ScrollView>
