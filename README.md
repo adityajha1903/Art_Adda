@@ -1,5 +1,5 @@
 # Art_Adda
-**This is a Kid's Drawing App made using Kotlin and by making a custom Drawing View class.**
+**This is a Kid's Drawing App made using Kotlin with a custom Drawing View class.**
 
 ## App Screenshot
 <p float="left">
