@@ -12,7 +12,7 @@
 </p>
 
 ## Implemented Feature
-  
+  - TODO
     
 ## Download APK
   [ArtAdda.apk]()
