@@ -22,9 +22,10 @@
     1. Undo/redo botton that can be used for erasing or unerasing paths drawn on the canvas by the user.
     2. Brush thickness selector, when clicked it pop-ups a custom dialog containing three different sizes for brush thickness
     3. Brush color selector, using this button the user can select the required brush color among fifteen different colors through a custom dialog.
-    4. Background image selector
-    5.
-    6.
+    4. Background image selector-
+      - When this button is clicked it asks for the `READ_EXTERNAL_STORAGE` permission, if the permission is already denied erlier then it shows the the `permissionRationalDialog` else it opens the gallery app using the `Intent` and `ActivityResultLauncher` class for setting the canvas bacground.
+    5. Save button, when this button is clicked it converts the view of the `FrameLayout` containing the background image and the `DrawingView` into a bitmap and then saves this bitmap externally in the gallery, if the `WRITE_EXTERNAL_STORAGE` permission is allowed else asks for this permission and do the same.
+    6. Share button, when this button is clicked it repeats the process as when the save button is clicked and then by using `Inten.ACTION_SEND` it shows a inbuild `BottomSheetDialog` through which the saved bitmap can be shared using different apps that allow sharing.
     
 ## Download APK
   [ArtAdda.apk](https://drive.google.com/file/d/1pVKrgN1KeehTlQ1FEsCJcr78uMw9e0m3/view?usp=sharing)
