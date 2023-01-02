@@ -12,7 +12,8 @@
 </p>
 
 ## Implemented Feature
-  - Custom `DrawingView` is implemented using the inbuild java class `View`. 
+  - It implements Custom `DrawingView` using the inbuild java class `View`.
+    - 
     
 ## Download APK
   [ArtAdda.apk](https://drive.google.com/file/d/1pVKrgN1KeehTlQ1FEsCJcr78uMw9e0m3/view?usp=sharing)
